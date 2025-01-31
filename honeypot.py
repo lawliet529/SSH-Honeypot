@@ -5,7 +5,7 @@ import time
 from paramiko.ssh_exception import SSHException
 
 # Generate host key with: ssh-keygen -t rsa -f host_key
-HOST_KEY = paramiko.RSAKey(filename='host_key')  # Update with your key path
+HOST_KEY = paramiko.RSAKey(filename='keys/host_key')  # Update with your key path
 LOG_FILE = 'logs/ssh_attempts.log'
 PORT = 2222  # Use port 22 for real SSH (requires root)
 

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 ./honeypot.py
+python3 -u ./honeypot.py

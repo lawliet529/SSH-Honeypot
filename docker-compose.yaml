@@ -1,0 +1,10 @@
+services:
+  ssh-honeypot:
+    image: ghcr.io/lawliet529/ssh-honeypot:latest
+    container_name: ssh-honeypot
+    ports:
+      - 2222:2222
+    volumes:
+      - ./keys:/opt/ssh-honeypot/keys
+      - ./logs:/opt/ssh-honeypot/logs
+    restart: unless-stopped
